@@ -1,3 +1,5 @@
+//2. multileval inheritance
+
 class MyClassA{
 
     //1 properties
@@ -52,7 +54,7 @@ class MyClassD extends MyClassC{
     //2. constructor
     //3. method
     myMethodD(){
-        console.log('hello everyon how are you')
+        console.log('hello from myMethodD')
     }
     myMethod2(){
         console.log('welcome to OKLABS')
@@ -65,7 +67,7 @@ class MyClassE extends MyClassD{
     //2. constructor
     //3. method
     myMethodE(){
-        console.log('OOPs programming language')
+        console.log('hello from myMethodE')
         this.myMethod2()
     }
 }
@@ -76,7 +78,7 @@ class MyClassF extends MyClassD{
     //2. constructor
     //3. method
     myMethodF(){
-        console.log('javascript is a programming language')
+        console.log('hello from my methodF')
         this.myMethodD()
     }
 }
@@ -92,36 +94,10 @@ class MyClassG extends MyClassF{
    }
 }
      // objectA = new ClassName()
-     let myObjA = new MyClassA()
-     //obj.method
-     myObjA.myFun1()
-
-    // objectB = new ClassName()
-    let myObjB = new MyClassB()
-    //obj.method
-    myObjB.myFun3()
-    myObjB.myFun4()
-
-    // objectC = new ClassName()
-    let myObjC = new MyClassC()
-    //obj.method
-    myObjC.myFunB()
-    
-    // objectD = new ClassName()
-    let D = new MyClassD()
-    //obj.method
-    D.myFunC1()
-    
-    // objectD = new ClassName()
-    let E = new MyClassE()
-    //obj.method
-    E.myMethodE()
-
-    let F = new MyClassF()
-    //obj.method
-    F.myMethodF()
 
     // G class object 
     let G = new MyClassG()
     G.gFun()
+    G.myMethodF()
+    G.myMethodD()
     
